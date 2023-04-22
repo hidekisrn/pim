@@ -1,4 +1,8 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using AutoMapper;
+using MediatR;
+using Microsoft.AspNetCore.Mvc;
+using Product.Inventory.Management.API.Models;
+using Product.Inventory.Management.Domain.Commands.Requests;
 
 namespace Product.Inventory.Management.API.Controllers;
 
@@ -6,15 +10,23 @@ namespace Product.Inventory.Management.API.Controllers;
 [Route("product")]
 public class ProductController : ControllerBase
 {
-    public ProductController()
+    private readonly IMapper _mapper;
+    private readonly IMediator _mediator;
+
+    public ProductController(IMapper mapper, IMediator mediator)
     {
+        _mapper = mapper;
+        _mediator = mediator;
     }
 
     [HttpPost]
     [Route("")]
-    public IActionResult Create()
+    public async Task<IActionResult> Create([FromBody] CreateProductModel model)
     {
-        return Ok();
+        var request = _mapper.Map<CreateProductModel, CreateProductRequest>(model);
+
+        var result = await _mediator.Send(request);
+        return Ok(result);
     }
 }
 

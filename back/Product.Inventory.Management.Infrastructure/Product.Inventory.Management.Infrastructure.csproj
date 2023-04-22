@@ -12,4 +12,10 @@
   <ItemGroup>
     <ProjectReference Include="..\Product.Inventory.Management.Domain\Product.Inventory.Management.Domain.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <None Remove="Interfaces\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Interfaces\" />
+  </ItemGroup>
 </Project>
