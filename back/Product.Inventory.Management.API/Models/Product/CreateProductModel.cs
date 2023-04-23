@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Text.Json.Serialization;
 
-namespace Product.Inventory.Management.API.Models;
+namespace Product.Inventory.Management.API.Models.Product;
 
 public class CreateProductModel
 {

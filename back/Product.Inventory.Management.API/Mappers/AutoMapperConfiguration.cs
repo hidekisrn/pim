@@ -11,6 +11,7 @@ public static class AutoMapperConfiguration
         var mappingConfig = new MapperConfiguration(mc =>
         {
             mc.AddProfile<ProductProfile>();
+            mc.AddProfile<BrandProfile>();
         });
 
         services.AddSingleton(mappingConfig.CreateMapper());

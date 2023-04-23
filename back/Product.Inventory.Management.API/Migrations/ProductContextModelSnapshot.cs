@@ -10,7 +10,7 @@ using Product.Inventory.Management.Infrastructure;
 
 namespace Product.Inventory.Management.API.Migrations
 {
-    [DbContext(typeof(ProductContext))]
+    [DbContext(typeof(Infrastructure.DbContext))]
     partial class ProductContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)

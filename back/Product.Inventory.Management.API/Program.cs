@@ -22,7 +22,7 @@ builder.Services.AddTransient<IProductRepository, ProductRepository>();
 
 #region DbConnection
 var connectionString = builder.Configuration.GetConnectionString("SampleDbConnection");
-builder.Services.AddEntityFrameworkNpgsql().AddDbContext<ProductContext>(opt =>
+builder.Services.AddEntityFrameworkNpgsql().AddDbContext<Product.Inventory.Management.Infrastructure.DbContext>(opt =>
         opt.UseNpgsql(connectionString, b => b.MigrationsAssembly("Product.Inventory.Management.API")), ServiceLifetime.Transient);
 #endregion
 #endregion

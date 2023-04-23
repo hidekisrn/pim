@@ -6,9 +6,9 @@ using ProductEntity = Product.Inventory.Management.Domain.Entities.Product;
 
 namespace Product.Inventory.Management.Infrastructure;
 
-public class ProductContext : DbContext
+public class DbContext : Microsoft.EntityFrameworkCore.DbContext
 {
-    public ProductContext(DbContextOptions<ProductContext> options) : base(options)
+    public DbContext(DbContextOptions<DbContext> options) : base(options)
     {
     }
 

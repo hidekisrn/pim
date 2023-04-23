@@ -11,18 +11,18 @@
     <None Remove="Commands\Handlers\" />
     <None Remove="Commands\Requests\" />
     <None Remove="Commands\Responses\" />
-    <None Remove="Commands\Responses\Products\" />
-    <None Remove="Commands\Requests\Products\" />
-    <None Remove="Commands\Handlers\Products\" />
+    <None Remove="Commands\Handlers\Brand\" />
+    <None Remove="Commands\Requests\Brand\" />
+    <None Remove="Commands\Responses\Brand\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Commands\" />
     <Folder Include="Commands\Handlers\" />
     <Folder Include="Commands\Requests\" />
     <Folder Include="Commands\Responses\" />
-    <Folder Include="Commands\Responses\Products\" />
-    <Folder Include="Commands\Requests\Products\" />
-    <Folder Include="Commands\Handlers\Products\" />
+    <Folder Include="Commands\Handlers\Brand\" />
+    <Folder Include="Commands\Requests\Brand\" />
+    <Folder Include="Commands\Responses\Brand\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Product.Inventory.Management.Domain\Product.Inventory.Management.Domain.csproj" />

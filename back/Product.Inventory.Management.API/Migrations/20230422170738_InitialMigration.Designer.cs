@@ -11,7 +11,7 @@ using Product.Inventory.Management.Infrastructure;
 
 namespace Product.Inventory.Management.API.Migrations
 {
-    [DbContext(typeof(ProductContext))]
+    [DbContext(typeof(Infrastructure.DbContext))]
     [Migration("20230422170738_InitialMigration")]
     partial class InitialMigration
     {

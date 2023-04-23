@@ -2,7 +2,8 @@
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using Product.Inventory.Management.API.Models;
-using Product.Inventory.Management.Application.Commands.Requests.Products;
+using Product.Inventory.Management.API.Models.Product;
+using Product.Inventory.Management.Application.Commands.Requests.Product;
 
 namespace Product.Inventory.Management.API.Controllers;
 

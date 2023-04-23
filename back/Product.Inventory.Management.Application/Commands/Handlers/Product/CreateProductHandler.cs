@@ -1,10 +1,10 @@
 ﻿using MediatR;
-using Product.Inventory.Management.Application.Commands.Requests.Products;
-using Product.Inventory.Management.Application.Commands.Responses.Products;
+using Product.Inventory.Management.Application.Commands.Requests.Product;
+using Product.Inventory.Management.Application.Commands.Responses.Product;
 using Product.Inventory.Management.Infrastructure.Interfaces;
 using ProductEntity = Product.Inventory.Management.Domain.Entities.Product;
 
-namespace Product.Inventory.Management.Application.Commands.Handlers.Products;
+namespace Product.Inventory.Management.Application.Commands.Handlers.Product;
 
 public class CreateProductHandler : IRequestHandler<CreateProductRequest, CreateProductResponse>
 {

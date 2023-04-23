@@ -1,7 +1,7 @@
 ﻿using MediatR;
-using Product.Inventory.Management.Application.Commands.Responses.Products;
+using Product.Inventory.Management.Application.Commands.Responses.Product;
 
-namespace Product.Inventory.Management.Application.Commands.Requests.Products;
+namespace Product.Inventory.Management.Application.Commands.Requests.Product;
 
 public class CreateProductRequest : IRequest<CreateProductResponse>
 {

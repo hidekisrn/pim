@@ -9,9 +9,9 @@ namespace Product.Inventory.Management.Infrastructure.PostgreSQL.Repositories
     public class ProductRepository : IProductRepository
     {
 
-        private readonly ProductContext _context;
+        private readonly DbContext _context;
 
-        public ProductRepository(ProductContext context)
+        public ProductRepository(DbContext context)
         {
             _context = context;
         }

@@ -1,16 +1,16 @@
 ﻿using System;
 using AutoMapper;
-using Product.Inventory.Management.API.Models;
+using Product.Inventory.Management.API.Models.Brand;
 using Product.Inventory.Management.API.Models.Product;
 using Product.Inventory.Management.Application.Commands.Requests.Product;
 
 namespace Product.Inventory.Management.API.Mappers.Profiles;
 
-public class ProductProfile : Profile
+public class BrandProfile : Profile
 {
-	public ProductProfile()
+	public BrandProfile()
 	{
-        CreateMap<CreateProductModel, CreateProductRequest>();
+        CreateMap<CreateBrandModel, CreateProductRequest>();
     }
 }
 
