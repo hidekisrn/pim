@@ -6,7 +6,7 @@ namespace Product.Inventory.Management.Infrastructure.Interfaces;
 
 public interface IProductRepository
 {
-    public Task Create(ProductEntity product);
+    public Task AddAsync(ProductEntity product);
     public Task<ProductEntity?> GetByFilterAsync(Expression<Func<ProductEntity, bool>> filter);
 }
 

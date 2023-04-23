@@ -33,5 +33,11 @@
     <ProjectReference Include="..\Product.Inventory.Management.Infrastructure\Product.Inventory.Management.Infrastructure.csproj">
       <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
     </ProjectReference>
+    <ProjectReference Include="..\Product.Inventory.Management.Application\Product.Inventory.Management.Application.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+    <ProjectReference Include="..\Product.Inventory.Management.Infrastructure.PostgreSQL\Product.Inventory.Management.Infrastructure.PostgreSQL.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
   </ItemGroup>
 </Project>

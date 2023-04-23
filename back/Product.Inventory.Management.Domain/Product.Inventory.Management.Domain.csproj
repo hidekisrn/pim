@@ -8,19 +8,8 @@
 
   <ItemGroup>
     <None Remove="Entities\" />
-    <None Remove="Commands\" />
-    <None Remove="Commands\Requests\" />
-    <None Remove="Commands\Responses\" />
-    <None Remove="Commands\Handlers\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Entities\" />
-    <Folder Include="Commands\" />
-    <Folder Include="Commands\Requests\" />
-    <Folder Include="Commands\Responses\" />
-    <Folder Include="Commands\Handlers\" />
-  </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="MediatR" Version="11.1.0" />
   </ItemGroup>
 </Project>

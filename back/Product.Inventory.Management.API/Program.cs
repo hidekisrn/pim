@@ -4,6 +4,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Product.Inventory.Management.API.Mappers;
 using Product.Inventory.Management.Infrastructure;
 using MediatR;
+using Product.Inventory.Management.Infrastructure.Interfaces;
+using Product.Inventory.Management.Infrastructure.PostgreSQL.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,7 +14,11 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.ConfigureMappings();
-builder.Services.AddMediatR(AppDomain.CurrentDomain.Load("Product.Inventory.Management.Domain"));
+builder.Services.AddMediatR(AppDomain.CurrentDomain.Load("Product.Inventory.Management.Application"));
+
+#region Repositories
+builder.Services.AddTransient<IProductRepository, ProductRepository>();
+#endregion
 
 #region DbConnection
 var connectionString = builder.Configuration.GetConnectionString("SampleDbConnection");
